@@ -14,5 +14,9 @@ func main() {
 		})
 	})
 
+	app.GET("/test", func(c *rakhsh.Context) {
+		c.String(200, "Hello from Rakhsh 🚀")
+	})
+
 	app.Listen(":8080")
 }
